@@ -1,0 +1,226 @@
+@import "reset.less";
+
+@font-face {
+  font-family: 'pf_ligth';
+  src: url('pfbeausanspro-light-webfont.eot');
+  src: url('pfbeausanspro-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('pfbeausanspro-light-webfont.woff') format('woff'),
+       url('pfbeausanspro-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'pf_regular';
+  src: url('pfbeausanspro-reg-webfont.eot');
+  src: url('pfbeausanspro-reg-webfont.eot?#iefix') format('embedded-opentype'),
+       url('pfbeausanspro-reg-webfont.woff') format('woff'),
+       url('pfbeausanspro-reg-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  position:relative;
+  background: url(i/tours.bg.png) top center repeat;
+  font:14px/1.5 Tahoma, sans-serif;
+}
+.clear{
+  overflow:hidden;
+  height:0px;
+  line-height:0px;
+  clear:both;
+  font-size:0px;
+}
+.wrapper{
+  width:980px;
+  margin:0 auto;
+  position: relative;
+  &.h {
+    padding-top: 50px;
+  }
+}
+
+.header{
+  background: url('i/bg_header.png') no-repeat;
+  height:191px;
+  position:relative;
+  .logo{
+    float:left;
+    margin-left:0px;
+    margin-top:11px;
+  }
+  .name{
+    font:60px/80px 'pf_regular';
+    color:#ffffff;
+    margin-left:225px;
+    line-height: 70px;
+  }
+  .countries{
+    margin-left:225px;
+    color:#ffc637;
+    font:15px 'pf_ligth';
+    ul{
+      li{
+        margin-left:2px;
+        display: inline;
+        a {
+          text-decoration: none;
+          border-bottom:1px dashed #ffc637;
+          color:#ffc637;
+          &:hover {border: none;}
+        }
+      }
+      img{
+        padding:2px;
+      }
+    }
+  }
+  .gd {
+    position:absolute;
+    top:0px;
+    right:0px;
+  }
+}
+
+.content{
+  margin:auto;
+  .line{
+    float:left;
+    width:980px;
+    margin-top:36px;
+    .item{
+      margin-left:30px;
+      float: left;
+      width: 306px;
+      .tour {
+        clear: both;
+        .img {
+          float: left;
+        }
+        .data {
+          margin-left: 93px;
+        }
+      }
+      .anonce{
+        color: #fff;
+        position: relative;
+        .image {
+          
+        }
+        .name_left {
+          font:27px'pf_regular';
+          font-weight:bold;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+        .name_left_black {
+          color:#603d1f;
+          font:27px'pf_regular';
+          font-weight:bold;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+        }
+        .name_right{
+          font:27px'pf_regular';
+          font-weight:bold;
+          position: absolute;
+          top: 20px;
+          right: 27px;
+        }
+        .price {
+          font:15px'pf_regular';
+          width: 100%;
+          position: absolute;
+          top: 162px;
+          left: 0;
+          text-align: center;
+          span{
+            font-size:22px;
+          }
+        }
+        .search{
+          font:14px'pf_regular';
+          text-align: center;
+          position: absolute;
+          left: 0;
+          top: 188px;
+          width: 100%;
+          img{
+           
+          }
+          a{
+            color:#fff;
+            margin-left:6px;
+            &:hover {text-decoration:none;}
+          }
+        }
+      }
+      .tours{
+        .label{
+          text-align: center;
+          font:28px'pf_regular';
+          margin-top:39px;
+        }
+        .tour{
+          
+          margin-top:20px;
+          img{
+            
+          }
+          .data{
+            .hotel{
+              a{
+              font:14px'pf_regular';
+              color:#0089ca;
+              &:hover {text-decoration:none;}
+              }
+            }
+            .date{
+              margin-top:7px;
+              color:#8a8a8a;
+              font:12px'pf_regular';
+            }
+            .price{
+              font:14px'pf_regular';
+              margin-top:6px;
+              span.price{
+                color:#da5008;
+                font:18px'pf_regular';
+              }
+              span.type{
+                color:#8a8a8a;
+                font:12px'pf_regular';
+              }
+            }
+            
+          }
+        }
+      }
+    }
+    .item:first-child {margin-left:0px};
+  }
+}
+.footer{
+  margin-top:108px;
+  background: url(i/bg_footer.png) no-repeat;
+  position:relative;
+  height:147px;
+  color:#fff;
+  font:14px 'pf_ligth';
+  .wrapper{
+    .copyright{
+      float:left;
+      padding:42px 0px 0px 0px;
+      width:470px;
+      big {font-size:18px;}
+      img {margin-left:-18px;}
+    }
+    .counter{
+      float:right;
+      padding:68px 0px 0px 0px;
+    }
+  }
+}
